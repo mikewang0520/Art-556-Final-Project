@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>The Peach Blossom Spring</title>
+  </head>
+  <body style="background-color:#E4E4E4;">
+    <audio id="homepageBgm" autoplay loop>
+        <source src="homepage.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="enableMute()" type="button">Mute</button>
+    <button onclick="disableMute()" type="button">Unmute</button>
+    <p class="hint">Best Experience with Sound On</p>
+    <a href="https://www.google.com/"><img class="left" src="homeLeftMountain.png" alt="Left Mountain"></a>
+    <a href="https://www.google.com/"><img class="right" src="homeRightMountain.png" alt="Right Mountain"></a>
+    <img class="man" src="fisherman.png" alt="Fisherman">
+    <b class="title">THE PEACH BLOSSOM SPRING</b>
+    <p class="subtitle">An Asian Utopia Journey</p>
+    <script>
+        var audio = document.getElementById("homepageBgm");
+        function enableMute() { 
+          audio.muted = true;
+        } 
+        function disableMute() { 
+          audio.muted = false;
+        }
+    </script> 
+  </body>
+</html>
